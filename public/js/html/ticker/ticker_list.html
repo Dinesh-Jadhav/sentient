@@ -1,0 +1,47 @@
+<Header></Header>
+<div class="row">
+<div class = "container">
+<div class="row">
+<ul class="breadcrumb">
+  <li><a href="javascript:void(0);">Ticker List</a></li>
+  </ul>
+</div>
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Ticker</th>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="x in response">
+        
+        <td>{{response._id}}</td>
+        <td>{{response.ticker_name}}</td>
+        <td><a href="edit" style="margin-right:1%">edit</a>|<a href="edit" style="margin-right:1%">delete</a></td>
+      </tr>
+      <!-- <tr>
+
+        <td>A</td>
+        <td>john@example.com</td>
+        <td><a href="edit" style="margin-right:1%">edit</a>|<a href="edit" style="margin-right:1%">delete</a></td>
+      </tr>
+      <tr>
+        
+        <td>B</td>
+        <td>mary@example.com</td>
+        <td><a href="edit" style="margin-right:1%">edit</a>|<a href="edit" style="margin-right:1%">delete</a></td>
+      </tr>
+      <tr>
+        
+
+        <td>C</td>
+        <td>july@example.com</td>
+        <td><a href="edit" style="margin-right:1%">edit</a>|<a href="edit" style="margin-right:1%">delete</a></td>
+      </tr> -->
+    </tbody>
+  </table>
+
+</div>
+</div>
